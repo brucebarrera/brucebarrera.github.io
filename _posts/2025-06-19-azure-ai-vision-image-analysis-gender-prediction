@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Azure AI Vision to perform image analysis and gender prediction
-date: 2025-06-19 13:07:00 +0000
+date: 2025-06-19 19:57:00 +0000
 categories: [Azure, AI, C#]
 tags: [Azure AI Vision]
 description: This article is an example of a C# .NET program that uses Azure AI Vision (formerly Azure Cognitive Services) to perform image analysis and attempt to recognize whether a human in an image is male or female based on facial attributes. Azure AI Vision provides pre-trained models for face detection and attribute analysis, including gender prediction. This approach is practical for rapid development, as it leverages a cloud-based API rather than requiring you to train a custom model from scratch.
