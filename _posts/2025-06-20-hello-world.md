@@ -2,7 +2,8 @@
 title: HELLO WORLD!
 date: 2025-06-20 12:06:00
 categories: [TOP_CATEGORY, SUB_CATEGORY]
-tags: [TAG]     # TAG names should always be lowercase
+tags: [tag]     # TAG names should always be lowercase
+description: A standard Hello World post.
 ---
 
 # HELLO WORLD!
