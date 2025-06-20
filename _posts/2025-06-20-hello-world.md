@@ -2,8 +2,8 @@
 layout: post
 title: HELLO WORLD!
 date: 2025-06-20 12:06:00
-categories: [TOP_CATEGORY, SUB_CATEGORY]
-tags: [tag]     # TAG names should always be lowercase
+categories: [Example, Sub_Example]
+tags: [Getting Started]     # TAG names should always be lowercase
 description: A standard Hello World post.
 ---
 
