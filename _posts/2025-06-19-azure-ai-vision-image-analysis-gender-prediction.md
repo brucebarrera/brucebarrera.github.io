@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Using Azure AI Vision to perform image analysis and gender prediction
-date: 2025-06-19 19:58:00 +0000
-categories: [Azure, AI, C#]
-tags: [Azure AI Vision]
+date: 2025-06-19 19:58:00 -0500
+categories: [AI, Azure, C#]
+tags: [Azure AI Vision, C#, Azure]
 published: true
 ---
 
