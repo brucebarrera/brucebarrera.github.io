@@ -13,9 +13,9 @@ In this article I'll provide a C# implementation for zero-shot image classificat
 - A pre-trained CLIP model (ONNX format) is available, with inputs for an image (preprocessed to 224x224 pixels, normalized) and text embeddings for labels.
 - The image is a 224x224 RGB image containing a giraffe, an elephant, and a jeep car in a savanna-like environment (see image below).
 - ONNX Runtime is used for inference.
-- The CLIP model outputs logits that can be converted to probabilities for each label.
+- The CLIP model outputs logits that can be converted to probabilities for each label
 
-![a Savannah scene with Giraffes, Elephants and a Jeep car.](/assets/savannah-scene.png "Savannah Scene")
+![a Savannah scene with Giraffes, Elephants and a Jeep car.](/assets/savannah_scene.png "Savannah Scene")
 
 ### C# Implementation
 
