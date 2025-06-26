@@ -7,8 +7,6 @@ tags: [C#, SQL, Database]
 published: true
 ---
 
-# Simplifying SQL Data Retrieval with SafeGetT Extension Method in C#
-
 When working with SQL data in C#, developers often need to handle data retrieval from an `IDataReader` safely, accounting for potential null values or missing columns. In this article we will implement a `SqlDataExtensions` static class that provides a useful extension method called `SafeGetT` that simplifies this process by safely retrieving typed data from an `IDataReader` with proper error handling.
 
 ## Overview of `SafeGetT`
