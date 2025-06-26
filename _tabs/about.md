@@ -4,8 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-
-# About Me: A Passionate Software Engineer & Backend Specialist
+## A Passionate Software Engineer & Backend Specialist
 
 Hello, I'm a Software Engineer with over 20 years of full-stack engineering experience, specializing in backend development and API architecture. My career has been defined by a relentless pursuit of building robust, scalable, and efficient systems, with a deep focus on Microsoft technologies like C#, .NET Core, and Azure.
 
