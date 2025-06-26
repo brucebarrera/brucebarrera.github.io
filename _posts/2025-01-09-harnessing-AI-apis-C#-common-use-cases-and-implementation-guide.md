@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Harnessing AI APIs in C# and .NET: Common Use Cases and Implementation Guide
+title: "Harnessing AI APIs in C# and .NET: Common Use Cases and Implementation Guide"
 date: 2025-01-09 20:18:00 -0500
 categories: [AI]
-tags: [AI, C#, Azure, REST]
+tags: [AI, C#, Azure, REST, API]
 published: true
 ---
 
