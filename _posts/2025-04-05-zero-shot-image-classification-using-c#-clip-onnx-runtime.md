@@ -10,8 +10,8 @@ published: true
 In this article I'll provide a C# implementation for zero-shot image classification using ONNX Runtime with a hypothetical CLIP model, along with unit tests. 
 
 ### Assumptions
-- A pre-trained CLIP model (ONNX format) is available, with inputs for an image (preprocessed to 224x224 pixels, normalized) and text embeddings for labels.
-- The image is a 224x224 RGB image containing a giraffe, an elephant, and a jeep car in a savanna-like environment (see image below).
+- A pre-trained CLIP model (ONNX format) is available, with inputs for an image (preprocessed to 720x480 pixels, normalized)  and text embeddings for labels.
+- The image is a 720x480 RGB image containing  giraffes, an elephants, and a jeep car in a savanna-like environment (see image below).
 - ONNX Runtime is used for inference.
 - The CLIP model outputs logits that can be converted to probabilities for each label
 
@@ -21,7 +21,7 @@ In this article I'll provide a C# implementation for zero-shot image classificat
 
 #### Project Setup
 - **Dependencies**: Install `Microsoft.ML.OnnxRuntime` NuGet package for ONNX Runtime.
-- **Image**: Assume a local image file `savanna_scene.jpg` (224x224 pixels) containing a giraffe, elephant, and jeep car.
+- **Image**: Assume a local image file `savanna_scene.jpg` (720x480 pixels) containing giraffes, elephants, and a jeep car.
 - **Model**: Assume a pre-trained CLIP model file `clip.onnx` is available locally.
 
 #### Code
@@ -59,7 +59,7 @@ namespace ZeroShotImageClassification
             // Run inference
             var inputs = new List<NamedOnnxValue>
             {
-                NamedOnnxValue.CreateFromTensor("image", new DenseTensor<float>(imageTensor, new[] { 1, 3, 224, 224 })),
+                NamedOnnxValue.CreateFromTensor("image", new DenseTensor<float>(imageTensor, new[] { 1, 3, 720, 480 })),
                 NamedOnnxValue.CreateFromTensor("text", new DenseTensor<float>(textEmbeddings, new[] { _labels.Length, 512 }))
             };
 
@@ -82,20 +82,20 @@ namespace ZeroShotImageClassification
         private float[] PreprocessImage(string imagePath)
         {
             using var bitmap = new Bitmap(imagePath);
-            if (bitmap.Width != 224 || bitmap.Height != 224)
+            if (bitmap.Width != 720 || bitmap.Height != 480)
             {
-                throw new ArgumentException("Image must be 224x224 pixels.");
+                throw new ArgumentException("Image must be 720x480 pixels.");
             }
 
             // Normalize image (assuming CLIP's normalization: mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
-            float[] tensor = new float[3 * 224 * 224];
+            float[] tensor = new float[3 * 720 * 480];
             int index = 0;
             float[] mean = { 0.485f, 0.456f, 0.406f };
             float[] std = { 0.229f, 0.224f, 0.225f };
 
-            for (int y = 0; y < 224; y++)
+            for (int y = 0; y < 480; y++)
             {
-                for (int x = 0; x < 224; x++)
+                for (int x = 0; x < 720; x++)
                 {
                     var pixel = bitmap.GetPixel(x, y);
                     tensor[index++] = (pixel.R / 255f - mean[0]) / std[0]; // R
@@ -225,17 +225,10 @@ jeep car: 0.2000
 
 These probabilities are hypothetical, assuming the model identifies the giraffe as the most prominent object, followed by the elephant, and the jeep car as less dominant in the scene.
 
-### Image Description
-The image `savanna_scene.jpg` is a 224x224 RGB image depicting:
-- A giraffe standing on the left side, with its neck extended upward.
-- An elephant in the center-right, facing slightly to the left.
-- A jeep car parked in the background on the right, with a green body and visible wheels.
-- The background is a savanna landscape with dry grass and a clear sky.
-
 ### Notes
 - **Model Availability**: The `clip.onnx` model is hypothetical. In practice, you'd need to export a pre-trained CLIP model (e.g., from PyTorch) to ONNX format.
 - **Text Embeddings**: The `GetTextEmbeddings` method is a placeholder. In a real implementation, you'd use CLIP's text encoder to generate embeddings for the labels.
-- **Image Preprocessing**: The preprocessing follows CLIP's standard normalization. Ensure the image is 224x224 pixels and normalized correctly.
+- **Image Preprocessing**: The preprocessing follows CLIP's standard normalization. Ensure the image is 720x480 pixels and normalized correctly.
 - **Unit Tests**: The tests assume the model and image files exist. For real testing, you'd need to mock the ONNX model or use a test image.
 - **Dependencies**: Ensure `Microsoft.ML.OnnxRuntime` is installed via NuGet (`dotnet add package Microsoft.ML.OnnxRuntime`).
 - **Running Tests**: Use `dotnet test` to run the xUnit tests.
