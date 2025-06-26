@@ -3,7 +3,7 @@ layout: post
 title: Implementation guide for integrating xAI's Grok API into a C#/.NET application
 date: 2025-06-19 19:58:00 -0500
 categories: [AI]
-tags: [Grok, C#, OpenAI, API, AI, xAI]
+tags: [Grok, csharp, OpenAI, API, AI, xAI]
 published: true
 ---
 
