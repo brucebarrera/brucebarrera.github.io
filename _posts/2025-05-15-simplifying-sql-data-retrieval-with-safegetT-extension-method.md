@@ -3,7 +3,7 @@ layout: post
 title: Simplifying SQL Data Retrieval with SafeGetT Extension Method in C#
 date: 2025-05-15 18:58:00 -0500
 categories: [C#]
-tags: [C#, SQL, Database]
+tags: [csharp, SQL, Database]
 published: true
 ---
 
