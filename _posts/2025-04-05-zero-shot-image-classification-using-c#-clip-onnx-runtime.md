@@ -2,7 +2,7 @@
 layout: post
 title: Zero-shot image classification using C# and .NET with a hypothetical pre-trained CLIP model via ONNX Runtime
 date: 2025-04-05 19:58:00 -0500
-categories: [AI, C#]
+categories: [AI]
 tags: [AI, C#]
 published: true
 ---
