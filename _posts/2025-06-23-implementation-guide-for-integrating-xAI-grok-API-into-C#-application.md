@@ -9,7 +9,8 @@ published: true
 
 In this article I'll show an example of an implementation for integrating xAI's Grok API into a C#/.NET application, focusing on a practical use case: generating text completions using the Grok API. This article includes setup instructions, a sample C# code snippet, and error handling, leveraging the API's compatibility with OpenAI's SDK format. The example assumes you have an API key from xAI’s console (https://console.x.ai) and uses the `HttpClient` for REST API calls, as there’s no official C# SDK for Grok, but its REST API is straightforward.
 
-```x-csharp
+## Code Implementation
+```csharp
 using System;
 using System.Net.Http;
 using System.Text;
