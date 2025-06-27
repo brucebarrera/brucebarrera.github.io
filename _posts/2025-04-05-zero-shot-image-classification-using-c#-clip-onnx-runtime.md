@@ -15,7 +15,7 @@ In this article I'll provide a C# implementation for zero-shot image classificat
 - ONNX Runtime is used for inference.
 - The CLIP model outputs logits that can be converted to probabilities for each label
 
-![a Savannah scene with Giraffes, Elephants and a Jeep car.](/assets/images/savannah_scene.png "Savannah Scene")
+![a Savannah scene with Giraffes, Elephants and a Jeep car.](/assets/img/savannah_scene.png "Savannah Scene")
 
 ### C# Implementation
 
