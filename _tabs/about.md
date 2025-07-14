@@ -4,10 +4,11 @@ icon: fas fa-info-circle
 order: 4
 ---
 
+![Bruce's Headshot Picture](/assets/img/bruce_blog_about.jpg)
+
 ## A Passionate Software Engineer & Backend Specialist
 
-|![Bruce's Headshot Picture](/assets/img/bruce_blog_about.jpg)| Hello, I'm **Bruce Barrera**, a Software Engineer with over 20 years of full-stack engineering experience, specializing in backend development and API architecture. My career has been defined by a relentless pursuit of building robust, scalable, and efficient systems, with a deep focus on Microsoft technologies like C#, .NET Core, and Azure. |
-|----|----|
+Hello, I'm **Bruce Barrera**, a Software Engineer with over 20 years of full-stack engineering experience, specializing in backend development and API architecture. My career has been defined by a relentless pursuit of building robust, scalable, and efficient systems, with a deep focus on Microsoft technologies like C#, .NET Core, and Azure.
 
 ## My Expertise
 My core competency is building and implementing enterprise-grade backend systems and APIs that power seamless, high-performance applications. I am skilled at writing clean, readable code and architecting APIs that are intuitive, secure, and scalable. With hands-on experience with .NET Core and Azure, I've built solutions that handle complex business logic, integrate with cloud services, and remain reliable at scale.
