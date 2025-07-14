@@ -4,7 +4,7 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-<img align="left" width="240" src="/assets/img/bruce_blog_about.jpg" alt="Bruce's Headshot Picture">
+<img width="240" src="/assets/img/bruce_blog_about.jpg" alt="Bruce's Headshot Picture" style="float: left; margin-right: 10px;">
 
 ## A Passionate Software Engineer & Backend Specialist
 
