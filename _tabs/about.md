@@ -6,6 +6,7 @@ order: 4
 <a href="">
 <img width="240" src="/assets/img/bruce_blog_about.jpg" alt="Bruce's Headshot Picture" style="float: left; position: relative;">
 </a>
+
 ## A Passionate Software Engineer & Backend Specialist
 
 Hello, I'm **Bruce Barrera**, a Software Engineer with over 20 years of full-stack engineering experience, specializing in backend development and API architecture. My career has been defined by a relentless pursuit of building robust, scalable, and efficient systems, with a deep focus on Microsoft technologies like C#, .NET Core, and Azure.
