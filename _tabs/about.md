@@ -3,7 +3,7 @@
 icon: fas fa-info-circle
 order: 4
 ---
-<a href="">
+<a href="/assets/img/bruce_blog_about.jpg">
 <img width="240" src="/assets/img/bruce_blog_about.jpg" alt="Bruce's Headshot Picture" style="float: left; position: relative;">
 </a>
 
